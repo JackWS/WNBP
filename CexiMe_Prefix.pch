@@ -1,0 +1,38 @@
+//
+// Prefix header for all source files of the 'CexiMe' target in the 'CexiMe' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+
+#ifdef DEBUG
+	#define JSLog( ... ) 	NSLog( __VA_ARGS__ )
+#else
+	#define JSLog( ... )
+#endif
+
+#ifdef ASSERTS
+
+// Asserts, from GCC 4.2. build 5654 looks like -fasm-blocks isn't supported for ARM.
+// SIMULATOR:
+//	__asm { int 3 }		// works, doesn't mention/no need -fasm-blocks
+//	__asm ( "int 3" ); 	// format doesn't work, error: {standard input}:827:suffix or operands invalid for `int'
+
+//	__asm { trap }		// compile complains about needing -fasm-blocks (which then errors with an unsupported message)
+//	__asm ( "trap" );	// works
+
+#if TARGET_CPU_ARM == 1
+	#define JSAssert( exp )	 		do { if (!(exp) ) { JSLog( @"ASSERT:%s", #exp ); __asm ( "trap" ); } } while (0)
+#elif TARGET_CPU_X86 == 1
+	#define JSAssert( exp )	 		do { if (!(exp) ) { JSLog( @"ASSERT:%s", #exp ); __asm { int 3 } } } while (0)
+#else
+	#include <assert.h>
+	#define JSAssert( exp )			do { if (!(exp) ) { JSLog( @"ASSERT:%s", #exp ); assert( exp ); } } while (0) 
+#endif
+
+#else
+
+#define JSAssert( exp )
+#endif // ASSERTS

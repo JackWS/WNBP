@@ -1,0 +1,49 @@
+BETA RELEASE 11
+
+iAd, admob, adsense, flurry working in simulator only. Device fully supported.
+Weak link mediaplayer.framework and iAd framework, otherwise follow setup instruction on docs.burstly.com
+
+Important: Set Base SDK to iOS 4.0 and Deployment target to whatever your lower support os version is(3.1.3+ recommended).
+
+
+
+Changes:
+
+BETA 11 - Flurry and Smaato libraries updated.
+
+BETA 10 - Greystripe fixes regarding iPad.
+
+BETA 9 - Added Large Format Ads Support for Mobclix and Admob. Various Greystripe fixes regarding multitasking on iOS4. New ad type of script for rich media/Traffic marketplace type ads.
+
+BETA 8 - Added Burstly class (Burstly.h). It allows you to get the version of burstrly library and get/set log level.
+
+BETA 7 - Greystripe now enabled in simulator.
+
+BETA 6 - Greystripe lib updated. Added function to set Greystripe download speed. Default is the minimum speed possible.
+
+BETA 5 - Added temporary function to initialize greystripe with hardcoded id.
+
+
+
+###################
+SDK VERSIONS
+
+iAD - N/A
+
+Admob - Version: 20100614. MD5(lib): 3d0f8927df354ae8894780b1af70240e
+
+Google Adsense* - Version: June 21th, 2010. MD5(lib): fa9fcca069f85380fd03cd42ec318096
+
+Flurry (w/ AppCircle) - (Xcode 3_2_3 flurrylibwithlocation) Version: 2.4 build 37. MD5(lib): 99869be3f32a0e9ec9bacc598688787f
+
+Mobclix - Version: 4.0.3. MD5(lib): 7a5610127ace026f0f2574d1974dfc0e
+
+Smaato -
+
+Millennial Media - Version: 3.5.4-100504i. MD5(lib): 144c5610c74590f7bd879c5785afc94d
+
+Greystripe - Version: 3.1.0. MD5(lib): 6d522ef7acc293ef2e84623e27384076
+
+
+*Note: Google Adsense is not open to the public. Google Adsense sdk is watermarked to publisher, please contact us for instructions on how to use Adsense if you are currently participating in the beta program.
+
