@@ -1,23 +1,11 @@
-
-
-
-
-
 // PLEASE SEE INSTALL/CONFIG INSTRUCTIONS:
 // http://getsharekit.com/install
-
-
-
-
-
 
 // App Description
 // These values are used by any service that shows 'shared from XYZ'
 
-#define SHKMyAppName			@"My App Name"
-#define SHKMyAppURL				@"http://example.com"
-
-
+#define SHKMyAppName			CEXI_APP_NAME
+#define SHKMyAppURL				CEXI_APP_URL
 
 /*
  API Keys
@@ -45,10 +33,22 @@
 // Facebook - http://www.facebook.com/developers
 // If SHKFacebookUseSessionProxy is enabled then SHKFacebookSecret is ignored and should be left blank
 
+/*
+Facebook:
+ App Name: Cexi Me LLC 
+ App URL: http://cexi.me/ 
+ App ID: 160087074033731 
+ App Secret: 5dfd4af4c9574ca284a235b4c65e9dbf
+*/
+
 #define SHKFacebookUseSessionProxy  NO 
-#define SHKFacebookKey				@""
-#define SHKFacebookSecret			@""
+#define SHKFacebookKey				@"160087074033731"
+#define SHKFacebookSecret			@"5dfd4af4c9574ca284a235b4c65e9dbf"
 #define SHKFacebookSessionProxyURL  @""
+
+
+
+
 
 // Read It Later - http://readitlaterlist.com/api/?shk
 #define SHKReadItLaterKey			@""
@@ -69,9 +69,9 @@
  2. 'Application Type' should be set to BROWSER (not client)
  3. 'Callback URL' should match whatever you enter in SHKTwitterCallbackUrl.  The callback url doesn't have to be an actual existing url.  The user will never get to it because ShareKit intercepts it before the user is redirected.  It just needs to match.
  */
-#define SHKTwitterConsumerKey		@""
-#define SHKTwitterSecret			@""
-#define SHKTwitterCallbackUrl		@"" // You need to set this if using OAuth, see note above (xAuth users can skip it)
+#define SHKTwitterConsumerKey		@"CTOS05p0KQdBASOw6dqq9w"
+#define SHKTwitterSecret			@"AnOICxjcmKAGF6vPaLpsZs5jz9hO3ULff6FpRiSJM"
+#define SHKTwitterCallbackUrl		@"www.cexi.me/something" // You need to set this if using OAuth, see note above (xAuth users can skip it)
 #define SHKTwitterUseXAuth			0 // To use xAuth, set to 1
 #define SHKTwitterUsername			@"" // Enter your app's twitter account if you'd like to ask the user to follow it when logging in. (Only for xAuth)
 
@@ -144,8 +144,14 @@
 //#define SHKLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 
 // B : hide debug output
-#define SHKDebugShowLogs			0
-#define SHKLog( s, ... ) 
+#ifdef DEBUG
+	#define SHKDebugShowLogs	1
+	#define SHKLog( s, ... )	JSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else	
+	#define SHKDebugShowLogs	0
+	#define SHKLog( s, ... ) 	
+#endif
+
 
 
 

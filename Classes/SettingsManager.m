@@ -115,10 +115,16 @@
 	}
 }	
 
-- (void)initializeImageView:(UIImageView*)view fromXPath:(NSString*)xpath
+-(NSString*)textFromXPath:(NSString*)xpath
 {
 	CXMLElement* urlElement = [[self.settingsXML nodesForXPath:xpath error:nil] objectAtIndex:0];
-	view.image = [UIImage imageNamed:[urlElement stringValue]];
+	return [urlElement stringValue];
+}
+
+- (void)initializeImageView:(UIImageView*)view fromXPath:(NSString*)xpath
+{
+	NSString* image = [self textFromXPath:xpath];
+	view.image = [UIImage imageNamed:image];
 }
 
 

@@ -12,6 +12,7 @@
 //  appreciated but not required.
 //
 
+#import "SHK.h"
 #import "CexiMeAppDelegate.h"
 #import "CexiMeViewController.h"
 #import "AudioStreamer.h"
@@ -20,8 +21,6 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <CFNetwork/CFNetwork.h>
 #import "AboutViewController.h"
-
-
 
 
 
@@ -879,5 +878,24 @@
 
 #endif
 
+// MARK:Share
+- (IBAction)share
+{
+	// Create the item to share (in this example, a url)
+	CexiMeAppDelegate* appDelegate = (CexiMeAppDelegate*)[[UIApplication sharedApplication] delegate];
+	
+	NSString* shareURL = [appDelegate.settingsManager textFromXPath:@"//settings/sharing/url"];
+	NSString* shareTitle = [appDelegate.settingsManager textFromXPath:@"//settings/sharing/text"];
+		
+	NSURL *url = [NSURL URLWithString:shareURL];
+	SHKItem *item = [SHKItem URL:url title:shareTitle];
+
+	// Get the ShareKit action sheet
+	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
+
+	// Display the action sheet
+	[actionSheet showFromRect:self.controlsView.frame inView:self.view animated:YES];
+//	[actionSheet showFromToolbar:navigationController.toolbar];
+}
 
 @end

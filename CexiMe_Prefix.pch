@@ -36,3 +36,8 @@
 
 #define JSAssert( exp )
 #endif // ASSERTS
+
+
+#define CEXI_APP_NAME			@"Cexi"
+#define CEXI_APP_URL			@"http://cexi.me"
+

@@ -254,6 +254,18 @@ static SHKActivityIndicator *currentIndicator = nil;
 {
 	UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
 	
+	// JR hack
+	if (	( orientation == UIDeviceOrientationFaceUp )
+		||	( orientation == UIDeviceOrientationFaceDown )
+		)
+	{
+		// use the status bar orientation
+		UIInterfaceOrientation uiorientation = [[UIApplication sharedApplication] statusBarOrientation];
+		
+		orientation = uiorientation;	// UIInterfaceOrientation is defined in terms of deviceorientation
+	}
+		
+	
 	if (animated)
 	{
 		[UIView beginAnimations:nil context:NULL];

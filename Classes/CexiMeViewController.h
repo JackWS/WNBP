@@ -97,5 +97,7 @@
 - (void)applicationDidBecomeActive:(NSNotification *)notification;
 
 -(void)didFinishLoadingSettings:(SettingsManager*)settingsManager;
+
+- (IBAction)share;
 @end
 

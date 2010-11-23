@@ -57,4 +57,5 @@
 - (void)initializeImageView:(UIImageView*)view fromXPath:(NSString*)xpath;
 - (UIColor*)colorAttributeFromXPath:(NSString*)xpath;
 - (void)didReceiveMemoryWarning;
+- (NSString*)textFromXPath:(NSString*)xpath;
 @end
