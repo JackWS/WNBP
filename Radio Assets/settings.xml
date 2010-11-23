@@ -7,7 +7,7 @@
 	<title color="#ffffff" size="18" font="AppleGothic">WNBP AM 1450</title>
 	<stream refresh="600">http://live.racinkidproductions.com:9092/listen.pls</stream>
 	
-	<slideshow refresh="10">
+	<slideshow refresh="4">
 		<!-- images ending with @x2 will be picked up automatically (but no current fall back)
 		<img>default1.png</img>
 		<img>default2.png</img>
@@ -15,7 +15,8 @@
 		<img url="http://s3.digitaldeckhands.com">slideshow2.png</img>
 		<img url="http://s3.digitaldeckhands.com">slideshow3.png</img>
 		<img url="http://s3.digitaldeckhands.com">slideshow4.png</img>-->
-		
+
+		<img>default.png</img>		
 		<img url="http://www.3bigheads.com/radioimages">wnbp10.jpg</img>
 		<img url="http://www.3bigheads.com/radioimages">wnbp1.jpg</img>
 		<img url="http://www.3bigheads.com/radioimages">wnbp2.jpg</img>

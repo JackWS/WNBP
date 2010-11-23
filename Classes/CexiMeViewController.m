@@ -272,6 +272,16 @@
 //	tapGesture.delegate = self;	
 //	[tapGesture release];
 
+
+/*
+	UIImageView* imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"default.png"]];
+	[self.splashView addSubview:imageView];
+	[self.splashView bringSubviewToFront:self.activityView];
+	[imageView release];
+*/
+
+	self.controlsView.alpha = 0.0f;
+
 	showingControls = YES;
 
 #ifdef BURSTLY
@@ -784,7 +794,7 @@
 	appDelegate.window.backgroundColor = [settingsManager colorAttributeFromXPath:@"//settings/background"];
 		
 	// Trigger background image view
-	[settingsManager performSelector:@selector(updateBackgroundImage) withObject:nil afterDelay:settingsManager.slideShowRefresh];
+	[settingsManager performSelector:@selector(updateBackgroundImage) withObject:nil afterDelay:0];//settingsManager.slideShowRefresh];
 	
 	// Now things are properly set up, register our observers
 	[[NSNotificationCenter defaultCenter] addObserver:self
@@ -806,6 +816,16 @@
 		
 		// \todo recheck network
 	}
+	
+	// Get rid of the splash screen
+	[UIView beginAnimations:nil context:nil];
+	self.splashView.alpha = 0.0f;
+	self.controlsView.alpha = 1.0f;
+	[UIView commitAnimations];	
+	
+
+	
+	
 }
 
 #pragma mark Burstly delegate methods

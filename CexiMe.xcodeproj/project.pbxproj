@@ -154,6 +154,8 @@
 		B999FF4B129C5D5800DEB167 /* 09-chat-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B999FF49129C5D5800DEB167 /* 09-chat-2@2x.png */; };
 		B999FF4C129C5D5800DEB167 /* 09-chat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B999FF48129C5D5800DEB167 /* 09-chat-2.png */; };
 		B999FF4D129C5D5800DEB167 /* 09-chat-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B999FF49129C5D5800DEB167 /* 09-chat-2@2x.png */; };
+		B999FF56129C621A00DEB167 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B999FF55129C621A00DEB167 /* default@2x.png */; };
+		B999FF57129C621A00DEB167 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B999FF55129C621A00DEB167 /* default@2x.png */; };
 		B99FEE151254497700C9A15D /* settings.xml in Resources */ = {isa = PBXBuildFile; fileRef = B99FEE141254497700C9A15D /* settings.xml */; };
 		B99FEE98125454CB00C9A15D /* settings.xml in Resources */ = {isa = PBXBuildFile; fileRef = B99FEE141254497700C9A15D /* settings.xml */; };
 		B99FEE9A125454CB00C9A15D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -396,6 +398,7 @@
 		B999FE19129A025A00DEB167 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B999FF48129C5D5800DEB167 /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "09-chat-2.png"; path = "Shared Resources/Images/09-chat-2.png"; sourceTree = "<group>"; };
 		B999FF49129C5D5800DEB167 /* 09-chat-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "09-chat-2@2x.png"; path = "Shared Resources/Images/09-chat-2@2x.png"; sourceTree = "<group>"; };
+		B999FF55129C621A00DEB167 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
 		B99FEE141254497700C9A15D /* settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = settings.xml; sourceTree = "<group>"; };
 		B99FEED9125455D300C9A15D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = ../Streaming/iphoneos3.0/System/Library/Frameworks/AddressBook.framework; sourceTree = SOURCE_ROOT; };
 		B99FEEDA125455D300C9A15D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = ../Streaming/iphoneos3.0/System/Library/Frameworks/AVFoundation.framework; sourceTree = SOURCE_ROOT; };
@@ -1062,6 +1065,7 @@
 			isa = PBXGroup;
 			children = (
 				B97315D71299EBB7000C47A9 /* default.png */,
+				B999FF55129C621A00DEB167 /* default@2x.png */,
 				B97315D81299EBB7000C47A9 /* icon.png */,
 				B97315D91299EBB7000C47A9 /* icon@2x.png */,
 				B99FEE141254497700C9A15D /* settings.xml */,
@@ -1189,6 +1193,7 @@
 				B999FD821299F1CA00DEB167 /* FBConnect.bundle in Resources */,
 				B999FF4A129C5D5800DEB167 /* 09-chat-2.png in Resources */,
 				B999FF4B129C5D5800DEB167 /* 09-chat-2@2x.png in Resources */,
+				B999FF56129C621A00DEB167 /* default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1220,6 +1225,7 @@
 				B999FDC01299F1CA00DEB167 /* FBConnect.bundle in Resources */,
 				B999FF4C129C5D5800DEB167 /* 09-chat-2.png in Resources */,
 				B999FF4D129C5D5800DEB167 /* 09-chat-2@2x.png in Resources */,
+				B999FF57129C621A00DEB167 /* default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

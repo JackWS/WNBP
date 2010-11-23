@@ -179,7 +179,7 @@
 	 name:ASPresentAlertWithTitleNotification
 	 object:nil];
 	 
- 	[self.settingsManager performSelector:@selector(updateBackgroundImage) withObject:nil afterDelay:self.settingsManager.slideShowRefresh];
+ 	[self.settingsManager performSelector:@selector(updateBackgroundImage) withObject:nil afterDelay:0];//self.settingsManager.slideShowRefresh];
 }
 
 
@@ -208,11 +208,6 @@
 -(void)didFinishLoadingSettings:(SettingsManager*)manager 
 {
 	[viewController didFinishLoadingSettings:(SettingsManager*)manager];
-
-	// Get rid of the splash screen
-	[UIView beginAnimations:nil context:nil];
-	viewController.splashView.alpha = 0.0f;
-	[UIView commitAnimations];
 }
 
 // MARK: UIAlertViewDelegate

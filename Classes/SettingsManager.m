@@ -200,7 +200,8 @@
 		{
 			// Hmm something failed here, so remove this 
 			[m_slideShowImages removeObjectAtIndex:currentBackgroundIndex];
-			[self performSelector:@selector(updateBackgroundImage) withObject:nil afterDelay:3.0f];
+			
+			[self performSelector:@selector(updateBackgroundImage) withObject:nil afterDelay:self.slideShowRefresh];
 		}
 	}
 	else
