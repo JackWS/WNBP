@@ -4,42 +4,40 @@
 <settings> <!--url="http://something/en/settings.xml">-->
 	<ads refresh="20"></ads>
 	<background color="#000000">Splash.png</background>
-	<title color="#ffffff" size="18" font="AppleGothic">WNBP AM 1450</title>
-	<stream refresh="600">http://live.racinkidproductions.com:9092/listen.pls</stream>
+	<title color="#ffffff" size="18" font="AppleGothic">WNBP</title>
 	
+  <!--   <stream refresh="600">http://cp.shoutcheap.com/cast/tunein.php/wnbpradio/playlist.pls</stream> -->
+	<stream refresh="600">http://mobilestream.wnbp.com/playlist.pls</stream>
 	<slideshow refresh="4">
 		<!-- images ending with @x2 will be picked up automatically (but no current fall back)
-		<img>default1.png</img>
-		<img>default2.png</img>
-		<img url="http://s3.digitaldeckhands.com">slideshow1.png</img>
-		<img url="http://s3.digitaldeckhands.com">slideshow2.png</img>
-		<img url="http://s3.digitaldeckhands.com">slideshow3.png</img>
-		<img url="http://s3.digitaldeckhands.com">slideshow4.png</img>-->
-
+         <img>default1.png</img>
+         <img>default2.png</img>
+         <img url="http://s3.digitaldeckhands.com">slideshow1.png</img>
+         <img url="http://s3.digitaldeckhands.com">slideshow2.png</img>
+         <img url="http://s3.digitaldeckhands.com">slideshow3.png</img>
+         <img url="http://s3.digitaldeckhands.com">slideshow4.png</img>-->
+        
 		<img>default.png</img>		
-		<img url="http://www.3bigheads.com/radioimages">wnbp10.jpg</img>
-		<img url="http://www.3bigheads.com/radioimages">wnbp1.jpg</img>
-		<img url="http://www.3bigheads.com/radioimages">wnbp2.jpg</img>
-		<img url="http://www.3bigheads.com/radioimages">wnbp3.jpg</img>
-		<img url="http://www.3bigheads.com/radioimages">wnbp4.jpg</img>
-		<img url="http://www.3bigheads.com/radioimages">wnbp5.jpg</img>
-		<img url="http://www.3bigheads.com/radioimages">wnbp6.jpg</img>
-		<img url="http://www.3bigheads.com/radioimages">wnbp7.jpg</img>
-		<img url="http://www.3bigheads.com/radioimages">wnbp8.jpg</img>
-		<img url="http://www.3bigheads.com/radioimages">wnbp9.jpg</img>
+		<img url="http://wnbp.com/portals/2/app/">wnbp1.jpg</img>
+		<img url="http://wnbp.com/portals/2/app/">wnbp2.jpg</img>
+		<img url="http://wnbp.com/portals/2/app/">wnbp3.jpg</img>
+		<img url="http://wnbp.com/portals/2/app/">wnbp4.jpg</img>
+		<img url="http://wnbp.com/portals/2/app/">wnbp5.jpg</img>
+		<img url="http://wnbp.com/portals/2/app/">wnbp6.jpg</img>
+		<img url="http://wnbp.com/portals/2/app/">wnbp7.jpg</img>
+		<img url="http://wnbp.com/portals/2/app/">wnbp8.jpg</img>
+		<img url="http://wnbp.com/portals/2/app/">wnbp9.jpg</img>
+		<img url="http://wnbp.com/portals/2/app/">wnbp10.jpg</img>
 	</slideshow>
 	<about>
 		<background>Splash.png</background>
-		<text color="#e0e0e0" size="12" font="AppleGothic">
-http://www.wnbp.com: The Legends AM 1450 WNBP has been serving the Greater Newburyport Massachusetts area 
-since 1957.  
-
-Owned and operated by Port Broadcasting, LLC, the folks at WNBP believe that the 
-best radio is local radio.
-</text>
+		<text color="#e0e0e0" size="12" font="AppleGothic">The Legends" WNBP Newburyport, Massachusetts is a musical mix of 50's, and 60's oldies combined with classic "Adult Standards," as well as local news, sports, weather and community information for the Northshore and beyond.
+            
+            About Cexi.me: CEXI.me creates high quality mobile applications for your enjoyment and ours. 
+        </text>
 	</about>
 	<sharing>
-		<url>http://cexi.me/radioplayer</url>
-		<text>Try this amazing radio player!</text>
+		<url>http://wnbp.com</url>
+		<text>Listening to WNBP on my iPhone!</text>
 	</sharing>
 </settings>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>056D395F-A24E-4BD3-8DB1-3C7AF240F099</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WNBP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>07A19D6F-7E21-41BD-B821-A2226E13FEEC</key>
+		<string>ssh://cexime.unfuddle.com/cexime/cexiproject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WNBP.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>07A19D6F-7E21-41BD-B821-A2226E13FEEC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://cexime.unfuddle.com/cexime/cexiproject.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>07A19D6F-7E21-41BD-B821-A2226E13FEEC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>07A19D6F-7E21-41BD-B821-A2226E13FEEC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WNBP</string>
+		</dict>
+	</array>
+</dict>
+</plist>

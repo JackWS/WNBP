@@ -36,8 +36,8 @@
 - (void)main
 {
 	NSString* pathToXML = [[NSBundle mainBundle] pathForResource:@"settings" ofType:@"xml"];
-	JSAssert( pathToXML );
-
+    JSAssert(pathToXML);
+    
 	NSData* data = [NSData dataWithContentsOfFile:pathToXML];
 
 	CXMLDocument* settingsDoc = [[[CXMLDocument alloc] initWithData:data options:0 error:nil] autorelease];
