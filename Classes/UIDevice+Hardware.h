@@ -13,7 +13,7 @@
 #define IPHONE_3GS_NAMESTRING			@"iPhone 3GS" 
 #define IPHONE_4G_NAMESTRING			@"iPhone 4" 
 #define IPHONE_FUTURE_NAMESTRING		@"Future iPhone"
-#define IPHONE_UNKNOWN_NAMESTRING		@"Unknown iPhone"
+#define IPHONE_UNKNOWN_NAMESTRING		@"iPhone 4"
 
 #define IPOD_1G_NAMESTRING				@"iPod touch 1G"
 #define IPOD_2G_NAMESTRING				@"iPod touch 2G"

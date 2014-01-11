@@ -18,8 +18,8 @@
 #define kCFCoreFoundationVersionNumber_iPhoneOS_4_0 550.32
 #endif
 #else
-#import <Cocoa/Cocoa.h>
-#endif TARGET_OS_IPHONE			
+//#import <Cocoa/Cocoa.h>
+#endif TARGET_OS_IPHONE
 
 #include <pthread.h>
 #include <AudioToolbox/AudioToolbox.h>

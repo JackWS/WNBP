@@ -314,7 +314,7 @@
 
 		if ( show )
 			frame.origin.y -= frame.size.height;
-		else 
+		else
 			frame.origin.y += frame.size.height;
 
 		self.controlsView.frame = frame;
